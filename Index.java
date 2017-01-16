@@ -10,11 +10,16 @@ public class Index {
 		Scanner sc = new Scanner(System.in);
 
 		String solution = "";
-		int code = ThreadLocalRandom.current().nextInt(1111, 8888 + 1);
+		int code = ThreadLocalRandom.current().nextInt(1, 9998 + 1);
 		solution += code;
 		String devine = "0";
 		int essai = 5;
-		System.out.println("\nWelcome to MASTERVOX !");
+		System.out.println("  __  __           _          __     __        ");
+		System.out.println(" |  \\/  | __ _ ___| |_ ___ _ _\\ \\   / /____  __");
+		System.out.println(" | |\\/| |/ _` / __| __/ _ \\ '__\\ \\ / / _ \\ \\/ /");
+		System.out.println(" | |  | | (_| \\__ \\ ||  __/ |   \\ V / (_) >  < ");
+		System.out.println(" |_|  |_|\\__,_|___/\\__\\___|_|    \\_/ \\___/_/\\_\\");
+		System.out.println("                                               ");
 		System.out.println("\nDevinez le nombre mystère. Il est de 4 chiffres, compris entre 1111 et 8888");
 		System.out.println("\nV : Chiffre valide et placé au bon endroit");
 		System.out.println("O : Chiffre valide mais pas à la bonne place");
@@ -28,8 +33,6 @@ public class Index {
 
 			if (devine.length() == 4) {
 
-//				System.out.println("(SOLUTION)=>" + solution
-//						+ ",\nVous avez mis : " + devine + ".");
 				int bon = 0;
 				int mauvais = 0;
 
